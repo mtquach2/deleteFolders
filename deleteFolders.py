@@ -24,7 +24,7 @@ def delete_folder(directory):
 				shutil.rmtree(subdirectory_path)
 
 # Specify the directory to check for disk capacity 
-directory_path = "E:/IPG OmniWELD Data" # TODO: Change directory
+directory_path = "E:/IPG OmniWELD Data" # TODO: Change directory if necessary 
 
 # Call the function to delete folders
 delete_folder(directory_path)
