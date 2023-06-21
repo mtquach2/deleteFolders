@@ -3,8 +3,8 @@ import shutil
 import time
 
 def delete_folder(directory):
-	# Get the disk usage of the current directory
-	total, used, free = shutil.disk_usage(directory)
+	# Get the disk usage of the external drive
+	total, used, free = shutil.disk_usage("E:")
 
 	# Calculate the percentage of disk space used 
 	used_percentage = (used / total) * 100
@@ -24,7 +24,7 @@ def delete_folder(directory):
 				shutil.rmtree(subdirectory_path)
 
 # Specify the directory to check for disk capacity 
-directory_path = "" # TODO: Change directory
+directory_path = "E:/IPG OmniWELD Data" # TODO: Change directory
 
 # Call the function to delete folders
 delete_folder(directory_path)
